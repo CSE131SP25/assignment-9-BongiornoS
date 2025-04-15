@@ -14,12 +14,24 @@ public class Food {
 	 */
 	public Food() {
 		//FIXME
+		this.x = Math.random(); //<-- Random x
+		this.y = Math.random(); //<-- Random y
 	}
 	
 	/**
 	 * Draws the Food
 	 */
 	public void draw() {
+		StdDraw.setPenColor(Color.RED);
+		StdDraw.filledCircle(x, y, FOOD_SIZE / 2); // Circle centered at (x, y)
+	}
+	
+	public double getX() {
+		return x;
+	}
+	
+	public double getY() {
+		return y;
 		//FIXME
 	}
 	
